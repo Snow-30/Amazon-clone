@@ -1,6 +1,9 @@
 # 🛒 Amazon Clone
 
 ## 🚀 Overview
+This project was inspired by JavaScript Tutorial Full Course - Beginner to Pro (2024) by SuperSimpleDev.  
+I have made modifications and improvements in various parts of the code.
+
 This is an **Amazon Clone** built using modern web technologies. The project replicates key features of the Amazon e-commerce platform with a responsive design.
 
 ## 🛠️ Technologies Used
