@@ -17,14 +17,15 @@ This is an **Amazon Clone** built using modern web technologies. The project rep
 ## 📂 Project Structure
 ```bash
 📁 Amazon Clone
-│── 📂 Data         # Images, icons, and other assets
+│── 📂 images  # Images, icons, and other assets
 │── 📂 Styles  # Stylesheets
 │── 📂 HTML #  HTML files
 │── 📂 Scripts   # JavaScript functionality
 ```
 
 ## 📸 Screenshots
-![Homepage](Assets/Screenshot.png)
+![Homepage](images/Screenshot%202025-02-01%20at%205.36.28 PM.png)
+![CartPage](images/Screenshot%202025-02-01%20at%205.36.38 PM.png)
 
 ## 🚀 How to Run
 1. **Clone the repository**
