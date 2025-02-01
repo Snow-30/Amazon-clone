@@ -16,7 +16,7 @@ This is an **Amazon Clone** built using modern web technologies. The project rep
 
 ## 📂 Project Structure
 ```bash
-📁 Amazon Clone
+📁 Amazon clone
 │── 📂 images  # Images, icons, and other assets
 │── 📂 Styles  # Stylesheets
 │── 📂 HTML #  HTML files
@@ -30,11 +30,11 @@ This is an **Amazon Clone** built using modern web technologies. The project rep
 ## 🚀 How to Run
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Snow-30/Amazon-Clone.git
+   git clone https://github.com/Snow-30/Amazon-clone.git
    ```
 2. **Navigate to the project directory**
    ```bash
-   cd Amazon-Clone
+   cd Amazon-clone
    ```
 3. **Open `amazonProject.html` in your browser**
 
