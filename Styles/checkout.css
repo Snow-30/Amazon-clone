@@ -1,0 +1,377 @@
+body {
+	font-family: Roboto, arial;
+	margin: 0;
+}
+.header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 60px;
+	align-items: center;
+	z-index: 1000;
+	background-color: white;
+}
+.header-content {
+	width: 100%;
+	max-width: 1100px;
+	display: flex;
+	align-items: center;
+}
+.amazon-mobile-logo {
+	display: none;
+	max-width: 100%;
+	max-height: 100%;
+	cursor: pointer;
+}
+.logo {
+	height: 30.5px;
+	width: 150px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.left-section {
+	margin-top: 8px;
+}
+.amazon {
+	max-width: 100%;
+	max-height: 100%;
+	cursor: pointer;
+}
+.middle-section {
+	display: flex;
+	font-size: 24px;
+	font-weight: 500;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 1;
+}
+.right-section {
+	display: flex;
+	width: 140px;
+	justify-content: end;
+}
+.main {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 140px;
+	margin-bottom: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 1100px;
+}
+.container {
+	display: grid;
+	grid-template-columns: 1fr 350px;
+	align-items: start;
+	column-gap: 12px;
+}
+.checkout-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 20px;
+	flex: 1;
+}
+.review {
+	font-weight: 600;
+	font-size: 21.9px;
+}
+.product-delivery {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgb(222, 222, 222);
+	padding: 18px;
+	border-radius: 4px;
+	margin-bottom: 13px;
+}
+.delivery-info {
+	display: flex;
+	justify-content: space-between;
+}
+.product-details {
+	display: flex;
+	flex-direction: column;
+	max-width: 275px;
+}
+.product-updation {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: left;
+}
+.product-image {
+	max-height: 115px;
+	width: 100px;
+	margin-right: 25px;
+	flex-shrink: 0;
+}
+.orderContainer {
+	display: grid;
+}
+.image {
+	max-width: 100%;
+	max-height: 115px;
+}
+.left-part {
+	display: flex;
+	margin-right: 30px;
+	width: 395px;
+}
+.delivery-time {
+	color: green;
+	font-size: 19px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	text-wrap: wrap;
+}
+.product-name {
+	font-weight: 600;
+	margin-bottom: 8px;
+	text-wrap: wrap;
+}
+.product-cost {
+	font-weight: 600;
+	color: rgb(177, 39, 4);
+	margin-bottom: 6px;
+}
+.quantity {
+	margin-right: 7px;
+	flex-shrink: 0;
+}
+.update {
+	margin-right: 7px;
+	color: rgb(1, 124, 182);
+	cursor: pointer;
+}
+.delete {
+	color: rgb(1, 124, 182);
+	cursor: pointer;
+	text-overflow: none;
+}
+.update:hover,
+.delete:hover {
+	color: rgb(177, 39, 4);
+	transition: 0.15s;
+}
+.delivery-heading {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.delivery-option {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.delivery-date {
+	color: green;
+	font-weight: 500;
+	margin-bottom: 3px;
+}
+.delivery-cost {
+	color: rgb(120, 120, 120);
+	font-size: 15px;
+}
+.delivery-option-input {
+	transform: scale(1.5);
+	margin-right: 8px;
+	cursor: pointer;
+}
+.delivery {
+	margin-right: auto;
+	min-width: 192px;
+}
+.orderSummary {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: 1px solid rgb(222, 222, 222);
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.orderPart {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	margin-right: auto;
+}
+.heading {
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.itemCost,
+.shippingCost {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+.cost {
+	border-bottom: 1px solid rgb(222, 222, 222);
+	padding-bottom: 10px;
+	width: 65px;
+	display: flex;
+	justify-content: right;
+}
+.totalBeforeTax,
+.afterTax {
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
+}
+.cost,
+.totalPrice,
+.taxPrice {
+	font-size: 15px;
+}
+.afterTax {
+	margin-top: 10px;
+	border-bottom: 1px solid rgb(222, 222, 222);
+	padding-bottom: 10px;
+}
+.totalCost {
+	display: flex;
+	color: rgb(177, 39, 4);
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.checkbox {
+	transform: scale(1.5);
+	margin-left: 10px;
+	cursor: pointer;
+}
+.orderButton {
+	background-color: rgb(255, 216, 20);
+	border: none;
+	width: 100%;
+	margin-top: 15px;
+	padding: 15px;
+	border-radius: 6px;
+	cursor: pointer;
+	box-shadow: 0px 3px 5px rgba(213, 217, 217, 0.5);
+	font-size: 14px;
+}
+.totalItems {
+	color: rgb(1, 124, 182);
+}
+.pageHeading {
+	display: flex;
+	flex-shrink: 0;
+}
+.orderButton:hover {
+	background-color: rgb(244, 193, 9);
+	box-shadow: none;
+}
+.orderButton:active {
+	box-shadow: none;
+	background-color: rgb(255, 216, 20);
+}
+@media (max-width: 1000px) {
+	.header {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 22px;
+	}
+	.middle-section {
+		font-size: 20px;
+	}
+	.container {
+		flex-direction: column;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		flex-shrink: 1;
+	}
+	.checkout-grid {
+		order: 2;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		margin-top: 12px;
+	}
+	.delivery-info {
+		flex-direction: column;
+		flex-shrink: 1;
+	}
+	.orderPart {
+		display: flex;
+		flex: 1;
+		width: 100%;
+		max-width: none;
+		margin-left: 0px;
+		height: auto;
+	}
+	.orderSummary {
+		order: 1;
+		width: 100%;
+	}
+	.main {
+		max-width: 500px;
+		flex: 1;
+	}
+	.delivery {
+		margin-top: 30px;
+		margin-left: 0;
+	}
+}
+@media (max-width: 575px) {
+	.amazon {
+		display: none;
+	}
+	.amazon-mobile-logo {
+		display: block;
+		z-index: 1250;
+	}
+}
+.quantity-input {
+	width: 30px;
+	border: 1px solid rgb(120, 120, 120);
+	border-radius: 2px;
+	outline: none;
+}
+.clicked {
+	outline: 2px solid rgb(255, 153, 0);
+}
+.quantity-input-container {
+	align-items: center;
+	justify-content: center;
+	display: none;
+	margin-right: 10px;
+}
+.save-quantity-link {
+	display: none;
+	color: rgb(1, 124, 182);
+	cursor: pointer;
+}
+.save-quantity-link:hover{
+	color: rgb(177, 39, 4);
+	transition: 0.15s;
+}
+.is-editing-quantity .quantity-input-container {
+	display: flex;
+}
+.is-editing-quantity .save-quantity-link {
+	display: initial;
+	margin-right: 10px;
+}
+.is-editing-quantity .quantity-num {
+	display: none;
+}
+.is-editing-quantity .update {
+	display: none;
+}

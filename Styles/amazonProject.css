@@ -1,0 +1,309 @@
+body{
+    font-family: Roboto,arial;
+    color: black;
+    margin: 0px; 
+}
+.header{
+    position: fixed; 
+    left: 0px; 
+    right: 0px;
+    top: 0px; 
+    background-color: rgb(19, 25, 33);
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-section{
+    width: 112px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;  
+    flex-shrink: 0; 
+    margin-left: 15px;
+    margin-right: 65px;
+    border: 1px solid rgb(19, 25, 33);
+    cursor: pointer;
+}
+.amazon-logo{ 
+    height: 31px; 
+    object-fit: contain;
+    margin-bottom: -1px;  
+}
+.left-section:hover{
+    border: 1px solid white;
+}
+.middle-section{
+    max-width: 850px;
+    display: flex;
+    flex: 1; 
+    margin-left: 05px; 
+    margin-right: 0px; 
+}
+.search{
+    height: 38px; 
+    padding-left: 16px; 
+    font-size: 16px; 
+    border-style: none;
+    border-top-left-radius: 6px; 
+    border-bottom-left-radius: 6px; 
+    flex: 1; 
+    max-width: 800px; 
+    outline: none; 
+    border: 2px solid rgb(19, 25, 33);
+}
+.search:focus{
+    border: 2px solid rgb(240, 136, 4);  
+}
+.search-icon-container{ 
+    margin-top: 2px;
+    margin-left: -2px;
+    background-color: rgb(254, 189, 105);
+    height: 40px; 
+    width: 45px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-icon{
+    object-position: center;
+    object-fit: contain;
+    width: 22px; 
+}
+.returns{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px; 
+    margin-right: 2px;
+    margin-top: 5px;
+    padding: 7px; 
+    margin-bottom: 2px; 
+}
+.returns:hover{
+    outline: 1px solid white;
+}
+.return{
+    font-size: 13px; 
+    color: white;
+}
+.order{
+    font-weight: bold;
+    font-size: 15px; 
+    color: white;
+}
+.cart{
+    display: flex; 
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px; 
+    padding-left: 6px; 
+    padding-right: 6px;
+    padding-top: 7px;
+    margin-bottom: 5px; 
+}
+.cart:hover{
+    outline: 1px solid white;
+}
+.right-section{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px; 
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+.cartIcon{
+    height: 35px; 
+    width: 50px;
+    margin-right: -4px;
+    margin-bottom: 7px; 
+}
+.cartText{
+    margin-top: 16px;
+    font-weight: 700;
+    padding-left: 4px; 
+    color: white; 
+    font-size: 15.2px;
+    margin-bottom: 4px; 
+}
+.cart-quantity{
+    position: absolute;
+    right: 43px;
+    top: 5px;  
+    color: rgb(240, 136, 4);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    width: 26px;
+}
+.amazon-mobile-logo{
+    display: none;
+}
+@media (max-width: 800px){
+    .left-section{
+        width: 140px; 
+        margin-right: -12px; 
+        margin-left: 2px; 
+    }
+}
+@media (max-width: 575px){
+    .amazon-logo{
+        display: none;
+        object-position: center;
+    }
+    .amazon-mobile-logo{
+        display: block;
+        height: 35px; 
+    }
+    .left-section{
+        margin-right: 2px; 
+        margin-left: 17px; 
+        margin-top: 1px; 
+        width: 45px; 
+    }
+
+}
+
+
+
+.Products{
+    margin-top: 60px; 
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+}
+@media (max-width: 2000px) {
+    .Products{
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+@media(max-width: 1600px){
+    .Products{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media (max-width: 1300px) {
+    .Products{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 1000px) {
+    .Products{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media(max-width: 800px){
+    .Products{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 575px){
+    .Products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 450px){
+    .Products{
+        grid-template-columns: 1fr;
+    }
+}
+.product{
+    display: flex; 
+    flex-direction: column;
+    border-right: 1px solid rgb(231, 231, 231); 
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;  
+    padding-bottom: 20px;  
+}
+.product-text{  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 40px;
+}
+.product-image{
+    display: flex;
+    height: 180px; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.product-img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.rating-part{
+    display: flex;
+    margin-top: 7px;
+    align-items: center;
+}
+.product-rating{
+    width: 100px;
+    margin-right: 6px;
+}
+.rating-num{
+    color: rgb(1, 124, 182);
+    margin-top: 3px;
+    cursor: pointer;
+}
+.rating-num:hover{
+    color: rgb(196, 80, 0); 
+    transition: 0.1s; 
+}
+.product-price{
+    font-weight: 700;
+    margin-top: 10px;
+}
+.dropdown-menu{
+    margin-bottom: 17px; 
+    margin-top: 10px; 
+}
+.dropdown{
+    background-color: rgb(240, 240, 240);
+    color: rgb(33, 33, 33);
+    padding: 3px 5px; 
+    border: 1px solid rgb(213, 217, 217);
+    border-radius: 8px; 
+    font-size: 15px; 
+    font-family: Roboto;
+    box-shadow: 0px 2px 5px rgba(213, 217, 217, 0.5);
+    cursor: pointer; 
+}
+.added-to-cart{
+    display: flex; 
+    opacity: 0; 
+    align-items: center;
+    color: green;
+    margin-bottom: 8px; 
+}
+.added-to-cart-visible{
+    opacity: 1; 
+}
+.tick{
+    height: 20px; 
+    margin-right: 5px; 
+}
+.add{
+    display: flex;
+    margin-bottom: 5px; 
+}
+.add-to-cart{
+    background-color: rgb(255, 216, 20);
+    border: none; 
+    flex: 1;
+    padding: 9px;
+    border-radius: 20px; 
+    color: rgb(33, 33, 33);
+    font-family: Roboto;
+    box-shadow: 0px 2px 5px rgba(213, 217, 217, 0.5);
+    cursor: pointer; 
+}
+.add-to-cart:hover{
+    background-color: rgb(244, 193, 9);
+    transition: 0.1s; 
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Added Roboto Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Connected the external css file -->
+		<link rel="stylesheet" href="../Styles/amazonProject.css" />
+	</head>
+	<body>
+		<!-- Header section of the page -->
+		<div class="header">
+			<!-- Left section contains the logo -->
+			<div class="left-section">
+				<img
+					class="amazon-logo"
+					src="../images/amazon-logo-white.png"
+				/>
+				<img
+					class="amazon-mobile-logo"
+					src="../images/amazon-mobile-logo-white.png"
+				/>
+			</div>
+			<!-- Middle section contains the search bar -->
+			<div class="middle-section">
+				<input class="search" placeholder="Search" />
+				<div class="search-icon-container">
+					<img
+						class="search-icon"
+						src="../images/icons/search-icon.png"
+					/>
+				</div>
+			</div>
+			<!-- Right section contains the cart and order menu -->
+			<div class="right-section">
+				<!-- Returns and orders -->
+				<div class="returns">
+					<div class="return">Returns</div>
+					<div class="order">& Orders</div>
+				</div>
+				<!-- Cart Section -->
+				<a href="checkout.html">
+					<div class="cart">
+						<img
+							class="cartIcon"
+							src="../images/icons/cart-icon.png"
+						/>
+						<div class="cartText">Cart</div>
+						<div
+							class="cart-quantity js-cart-quantity"
+						>
+							<!-- Java Script will dynamicaly populate this -->
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Section for displaying products (JavaScript will automatically populate this) -->
+		<div class="Products js-Products"></div>
+		<!-- Connected the external script file -->
+		<script type="module" src="../Scripts/amazonProject.js"></script>
+	</body>
+</html>
